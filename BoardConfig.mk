@@ -94,3 +94,6 @@ TW_USE_TOOLBOX := true
 
 # exclude twrp app
 TW_EXCLUDE_TWRPAPP := true
+
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"

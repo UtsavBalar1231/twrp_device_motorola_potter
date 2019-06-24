@@ -14,6 +14,8 @@ on property:ro.crypto.state=encrypted
 on init
     chmod 0777 /dev/qseecom
     chown system mot_tpapi /dev/qseecom
+    chown system radio /sys/android_touch/doubletap2wake
+    chmod 0660 /sys/android_touch/doubletap2wake
     chmod 0664 /dev/ion
     chown system system /dev/ion
     mkdir /vendor/firmware
@@ -23,3 +25,8 @@ on init
     symlink /firmware/image/keymaster.b02 /vendor/firmware/keymaster/keymaster.b02
     symlink /firmware/image/keymaster.b03 /vendor/firmware/keymaster/keymaster.b03
     symlink /firmware/image/keymaster.mdt /vendor/firmware/keymaster/keymaster.mdt
+
+on property:sys.boot_completed
+
+    # Enable dt2w
+    write /sys/android_touch/doubletap2wake 1
