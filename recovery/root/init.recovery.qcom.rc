@@ -8,6 +8,8 @@ service sbinqseecomd /sbin/qseecomd
     group root
     seclabel u:r:recovery:s0
 
+    setprop ro.board.platform msm8953
+
 on property:ro.crypto.state=encrypted
     start sbinqseecomd
 
