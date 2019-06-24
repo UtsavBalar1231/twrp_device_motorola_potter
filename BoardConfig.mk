@@ -94,3 +94,6 @@ TW_INCLUDE_NTFS_3G := true
 
 # toolbox
 TW_USE_TOOLBOX := true
+
+# exclude twrp app
+TW_EXCLUDE_TWRPAPP := true
