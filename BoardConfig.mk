@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015-2016 The Android Open-Source Project
+# Copyright (C) 2015-2019 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -91,3 +91,6 @@ TW_NEW_ION_HEAP := true
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
+
+# toolbox
+TW_USE_TOOLBOX := true
